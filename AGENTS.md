@@ -2,9 +2,9 @@
 
 ## Project goals
 
-本项目面向巡检机器人，重点研究和实现可靠、长期、可演化的记忆系统，使机器人能够持续积累、检索和利用经验，逐步提升环境理解、异常识别、规划与处置能力，最终支持安全、可验证、可回滚的自进化。
+This project targets inspection robots, with a focus on researching and implementing a reliable, long-term, and evolvable memory system. The system should enable robots to continuously accumulate, retrieve, and use experience, progressively improve environment understanding, anomaly detection, planning, and response, and ultimately support safe, verifiable, and reversible self-evolution.
 
-研究按工作记忆、情景记忆、语义/图式记忆、记忆驱动的预测规划和元记忆逐步推进。当前园区 Demo 优先验证前三级能力，但不预设具体模型、数据集、技术路线或机器人平台。
+Research should progress through working memory, episodic memory, semantic and schema memory, memory-driven prediction and planning, and metamemory. The current campus demo prioritizes the first three levels without prescribing a specific model, dataset, technical approach, or robot platform.
 
 The repository should preserve the complete research process, from literature review, problem formulation, and hypotheses through experiments, analysis, and paper writing. Existing surveys are exploratory material and do not represent a final approach or conclusion.
 
@@ -46,7 +46,7 @@ Use `EXP-YYYYMMDD-short-name/` for experiment directories. Every experiment must
 - Small, low-risk documentation-only changes may be made directly on a clean, up-to-date `main`. Use a `work/<short-name>` branch for code changes, experiments, or work that requires cross-device handoff. Continue a given task on only one device at a time; another device may take over only after an explicit handoff.
 - Follow `.agents/skills/git-handoff/SKILL.md` for takeover and handoff. If branches have diverged, stop and report the divergence; do not automatically rebase, merge, overwrite, or force-push.
 - A handoff must leave a focused, understandable commit and push the current branch. Never hand off through uncommitted files or a stash.
-- Report only checks actually run on the current device. When the required environment is unavailable, explicitly mark the check as `未运行` (not run); never claim that unexecuted code has passed validation.
+- Report only checks actually run on the current device. When the required environment is unavailable, explicitly mark the check as `not run`; never claim that unexecuted code has passed validation.
 - Keep large datasets, logs, checkpoints, and output artifacts on the device where they were produced. Do not synchronize them through Git; commit only concise results, reproduction details, and necessary local-location notes when appropriate.
 
 ## Working constraints
