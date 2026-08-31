@@ -1,0 +1,3 @@
+[submodule "src/HoloAgent"]
+	path = src/HoloAgent
+	url = https://github.com/HorizonRobotics/HoloAgent.git
